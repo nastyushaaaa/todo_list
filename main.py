@@ -1,8 +1,13 @@
 tasks = []
 
 def add_task(title):
+    if not title.strip():
+        print("Название задачи не может быть пустым!")
+        return False
+
     tasks.append({"title": title, "completed": False})
     print("Задача добавлена!")
+    return True
 
 def delete_task(index):
     if 0 <= index < len(tasks):
