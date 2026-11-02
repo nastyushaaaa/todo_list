@@ -30,6 +30,8 @@ jobs:
         run: pip install pdoc
 
       - name: Generate documentation
+        env:
+          PYTHONPATH: .
         run: pdoc main -o docs
 
       - name: Upload documentation
