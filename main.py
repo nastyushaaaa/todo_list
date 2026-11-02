@@ -1,3 +1,4 @@
+# Консольное приложение
 tasks = []
 
 def add_task(title):
